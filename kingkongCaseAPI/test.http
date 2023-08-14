@@ -1,0 +1,29 @@
+GET http://localhost:3000/cases
+
+###
+GET http://localhost:3000/cases/64d92061748bd47ddb770081
+
+###
+
+POST http://localhost:3000/cases
+Content-Type: application/json
+
+{
+    "task": "Bygga hus"
+}
+
+###
+
+PATCH http://localhost:3000/cases/64da0254b3dfd63bb7c63e26
+Content-Type: application/json
+
+{
+    "task": "Ett nytt ärende",
+    "comments": "ändra allt",
+    "completed": true,
+    "status": "waiting"
+}
+
+###
+
+DELETE http://localhost:3000/cases/64d9205d748bd47ddb77007f

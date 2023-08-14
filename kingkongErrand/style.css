@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.wrapper {
+  background-image: -moz-linear-gradient(rgb(150, 248, 150), rgb(167, 253, 167));
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  padding-top: 2rem;
+  height: 100vh;
+}
+
+.card {
+  display: grid;
+  width: 80vw;
+  max-height: 90vh;
+  background-color: rgba(100, 12, 188, 0.531);
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.form {
+  background-color: rgba(245, 245, 220, 0.536);
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+.rubrik {
+  text-align: center;
+  padding: 1rem;
+}
+
+.case-container {
+  padding: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: space-between;
+}
+
+.case-container:nth-child(even) {
+  background-color: rgb(161, 161, 184);
+}
+
+.case-container:nth-child(odd) {
+  background-color: rgb(137, 137, 182);
+}
+
+.input-readonly {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.input-readable {
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgb(182, 182, 195);
+}
+
+input {
+  margin: 0.2rem;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: monospace;
+  padding: 4px;
+  transform: 200ms;
+}
+button:hover {
+  transform: scale(1.02);
+}
+
+.dropdown {
+  background: none;
+  border: none;
+}
+
+.email-style {
+  font-size: 0.8rem;
+}
+
+.email-style, .message-style {
+  width: 12vw;
+}/*# sourceMappingURL=style.css.map */
